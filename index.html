@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salam Pharmacy | Trusted Healthcare & Pharmacy Services in Garden Town, Lahore</title>
+  <meta name="description" content="Salam Pharmacy provides reliable access to prescription medications, OTC drugs, and high-quality medical supplies in Garden Town, Lahore. Call +92 327 2112277.">
+  <meta name="keywords" content="Salam Pharmacy Lahore, Pharmacy in Garden Town Lahore, Pharmacy near Tipu Block, Pharmacy near Ferozepur Road, Medical supplies Garden Town">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+  
+  <!-- Favicon URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230f2b48'/><path d='M50 20 V80 M20 50 H80' stroke='%2300a887' stroke-width='14' stroke-linecap='round'/></svg>">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+  <meta property="og:title" content="Salam Pharmacy | Trusted Healthcare in Garden Town, Lahore">
+  <meta property="og:description" content="Reliable prescription refills, over-the-counter medicines, and medical equipment at Tipu Block, Garden Town, Lahore.">
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/og-cover.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salam Pharmacy | Trusted Healthcare in Garden Town, Lahore">
+  <meta name="twitter:description" content="Reliable prescription refills, over-the-counter medicines, and medical equipment at Tipu Block, Garden Town, Lahore.">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP & Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
+  <script src="animations.js" defer></script>
+
+  <!-- Structured Data: Local Business / Pharmacy -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pharmacy",
+    "name": "Salam Pharmacy",
+    "image": "https://YOUR-DOMAIN.com/og-cover.jpg",
+    "telephone": "+923272112277",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "320 Lahore–Kasur Road / Ferozepur Road, Tipu Block, Garden Town",
+      "addressLocality": "Lahore",
+      "addressRegion": "Punjab",
+      "postalCode": "54600",
+      "addressCountry": "PK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "31.5033",
+      "longitude": "74.3316"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "url": "https://YOUR-DOMAIN.com/"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Operating Notice">
+    <div class="container announcement-content">
+      <span>📍 Located at 320 Ferozepur Road, Garden Town, Lahore | Listed Hours: 24/7 (Please call to confirm)</span>
+      <a href="tel:+923272112277" class="announcement-link">Call: +92 327 2112277</a>
+    </div>
+  </aside>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Salam Pharmacy Home">
+        <span class="logo-icon" aria-hidden="true">+</span>
+        <span class="logo-text">Salam <span>Pharmacy</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+923272112277" class="btn btn-primary btn-sm">Call Now</a>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-nav-menu" aria-label="Toggle navigation menu">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-menu" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <div class="mobile-nav-header">
+          <span class="logo-text">Salam <span>Pharmacy</span></span>
+          <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation menu">&times;</button>
+        </div>
+        <nav aria-label="Mobile Navigation">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-footer">
+          <a href="tel:+923272112277" class="btn btn-primary btn-block">Call +92 327 2112277</a>
+          <p class="mobile-nav-note">Garden Town, Lahore, Punjab</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge badge-accent">Community Pharmacy Care</span>
+          <h1 class="hero-title">Trusted Pharmacy Care, Right Where You Need It</h1>
+          <p class="hero-description">Reliable access to prescription and over-the-counter medicines, healthcare supplies, and patient care equipment in Garden Town, Lahore.</p>
+          <div class="hero-cta-group">
+            <a href="tel:+923272112277" class="btn btn-primary btn-lg">Call Salam Pharmacy</a>
+            <a href="services.html" class="btn btn-secondary btn-lg">Explore Services</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-title">Location</span>
+              <span class="highlight-sub">Tipu Block, Garden Town</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-title">Listed Hours</span>
+              <span class="highlight-sub">24/7 (Call to confirm)</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div id="hero-webgl-canvas" class="webgl-container" aria-hidden="true"></div>
+          <div class="hero-fallback-card">
+            <div class="visual-icon-box">+</div>
+            <h3>Salam Pharmacy</h3>
+            <p>Healthcare Excellence & Medicine Reliability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Indicators Bar -->
+    <section class="trust-bar-section">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">💊</div>
+          <div>
+            <h4>Authentic Medicines</h4>
+            <p>Sourced from licensed distributors</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🏥</div>
+          <div>
+            <h4>Complex Associated</h4>
+            <p>Located at Salam Medical Complex</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🩺</div>
+          <div>
+            <h4>Healthcare Equipment</h4>
+            <p>Monitors, care essentials & supplies</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">📞</div>
+          <div>
+            <h4>Direct Assistance</h4>
+            <p>Dedicated phone support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section-padding about-preview-section">
+      <div class="container grid-2-col">
+        <div class="about-visual-box">
+          <div class="glass-card">
+            <span class="card-subtitle">Salam Pharmacy</span>
+            <h3>Your Partner in Health & Recovery</h3>
+            <p>Serving the local community of Garden Town and surrounding Lahore neighborhoods with focus on accuracy, care, and convenience.</p>
+            <a href="about.html" class="btn-text">Read More About Us &rarr;</a>
+          </div>
+        </div>
+        <div class="about-text-box">
+          <span class="badge">Patient-Centered Focus</span>
+          <h2>A Reliable Healthcare Anchor in Garden Town</h2>
+          <p>Salam Pharmacy stands as a dependable resource for prescriptions, personal healthcare products, and medical equipment. Situated along Ferozepur Road, we serve residents, visitors, and patients seeking trustworthy advice and reliable medicine supply.</p>
+          <ul class="feature-list">
+            <li>Strict adherence to standard storage and pharmaceutical handling</li>
+            <li>Comprehensive stock of chronic disease and emergency care medications</li>
+            <li>Convenient location integrated within the local healthcare setting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="section-padding bg-alt services-overview-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge">Our Capabilities</span>
+          <h2>Comprehensive Pharmacy Services</h2>
+          <p>Dedicated to meeting your daily and critical healthcare supply needs with precision.</p>
+        </div>
+        <div class="grid-3-col card-grid">
+          <article class="service-card">
+            <div class="card-icon">🩺</div>
+            <h3>Prescription Fulfillment</h3>
+            <p>Accurate handling of valid medical prescriptions with professional guidance on dosage and schedule.</p>
+            <a href="services.html#prescription" class="btn-text">Learn More &rarr;</a>
+          </article>
+
+          <article class="service-card">
+            <div class="card-icon">💊</div>
+            <h3>Over-the-Counter Care</h3>
+            <p>Wide selection of vitamins, first-aid, wellness supplements, and common over-the-counter therapies.</p>
+            <a href="services.html#otc" class="btn-text">Learn More &rarr;</a>
+          </article>
+
+          <article class="service-card">
+            <div class="card-icon">🧪</div>
+            <h3>Medical Equipment</h3>
+            <p>Reliable blood pressure monitors, glucometers, nebulizers, and home patient care essentials.</p>
+            <a href="services.html#equipment" class="btn-text">Learn More &rarr;</a>
+          </article>
+        </div>
+        <div class="text-center mt-3">
+          <a href="services.html" class="btn btn-secondary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories Preview -->
+    <section class="section-padding product-categories-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge">Product Range</span>
+          <h2>Healthcare Categories</h2>
+          <p>Explore the broad spectrum of medical supplies and health products available at our counter.</p>
+        </div>
+        <div class="grid-4-col category-grid">
+          <div class="category-card">
+            <div class="category-icon">💊</div>
+            <h3>Prescription Medicines</h3>
+            <p>Cardiovascular, diabetic, antibiotic, and specialized medications.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🩹</div>
+            <h3>Surgical & Wound Care</h3>
+            <p>Sterile dressings, bandages, antiseptics, and surgical tapes.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🩸</div>
+            <h3>Diagnostic Monitors</h3>
+            <p>Glucose testing strips, digital BP cuffs, thermometers.</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🧴</div>
+            <h3>Personal Hygiene</h3>
+            <p>Skincare, infant care, sanitize equipment, and supplements.</p>
+          </div>
+        </div>
+        <div class="disclaimer-box mt-3 text-center">
+          <p><strong>Note:</strong> Product availability may vary. Please call <strong>+92 327 2112277</strong> to confirm specific medicine stock prior to visiting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pharmacy Convenience / Delivery Inquiry Section -->
+    <section class="section-padding bg-primary text-white convenience-section">
+      <div class="container grid-2-col align-center">
+        <div>
+          <span class="badge badge-light">Convenient Service</span>
+          <h2>Need Medicine Availability Check or Delivery Inquiry?</h2>
+          <p>Save time by verifying your prescription availability with our team over the phone before making the trip.</p>
+          <p>Contact Salam Pharmacy directly to ask about current medicine delivery availability and service coverage within Lahore.</p>
+        </div>
+        <div class="text-right-desktop">
+          <a href="tel:+923272112277" class="btn btn-accent btn-lg">Call +92 327 2112277</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medical Complex Association Section -->
+    <section class="section-padding complex-association-section">
+      <div class="container">
+        <div class="info-banner-card">
+          <div class="info-content">
+            <span class="badge">Healthcare Network</span>
+            <h2>Associated with Salam Medical Complex</h2>
+            <p>Salam Pharmacy works alongside Salam Medical Complex in Garden Town to ensure seamless patient care support and access to essential clinical supplies.</p>
+            <div class="complex-contacts">
+              <div><strong>Medical Complex General Enquiries:</strong> 042-35886000</div>
+              <div><strong>Additional Contact:</strong> +92 311 1222288</div>
+              <div><strong>Salam Medical Complex Email:</strong> care@salammedicalcomplex.com</div>
+            </div>
+            <p class="micro-text mt-2">*Please note: For direct pharmacy queries regarding stock and prescriptions, use the primary pharmacy line at +92 327 2112277.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Map Section -->
+    <section class="section-padding bg-alt location-section">
+      <div class="container grid-2-col align-center">
+        <div>
+          <span class="badge">Find Us</span>
+          <h2>Conveniently Located on Ferozepur Road</h2>
+          <p>Our strategic position in Garden Town renders us accessible for routine visits as well as emergency medicine requirements.</p>
+          <address class="address-box">
+            <strong>Salam Pharmacy</strong><br>
+            320 Lahore–Kasur Road / Ferozepur Road,<br>
+            Tipu Block, Garden Town, Lahore, Punjab 54600<br><br>
+            <strong>Primary Contact:</strong> +92 327 2112277
+          </address>
+          <a href="https://maps.google.com/?q=Salam+Pharmacy+320+Ferozepur+Road+Tipu+Block+Garden+Town+Lahore" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-2">Get Directions on Google Maps</a>
+        </div>
+        <div class="map-placeholder-card">
+          <div class="map-visual">
+            <span class="map-pin">📍</span>
+            <h4>Tipu Block, Garden Town</h4>
+            <p>320 Ferozepur Road, Lahore</p>
+            <a href="https://maps.google.com/?q=Salam+Pharmacy+320+Ferozepur+Road+Tipu+Block+Garden+Town+Lahore" target="_blank" rel="noopener noreferrer" class="btn-text">Open Interactive Navigation &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="brand-logo footer-logo">
+          <span class="logo-icon">+</span>
+          <span class="logo-text">Salam <span>Pharmacy</span></span>
+        </a>
+        <p>Providing authentic medications, healthcare supplies, and professional service in Garden Town, Lahore.</p>
+        <div class="footer-contact-info">
+          <p><strong>Primary Phone:</strong> <a href="tel:+923272112277">+92 327 2112277</a></p>
+          <p><strong>Address:</strong> 320 Lahore–Kasur Road / Ferozepur Road, Tipu Block, Garden Town, Lahore, Punjab 54600</p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Legal & Compliance</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Salam Medical Complex</h4>
+        <p class="footer-subtext">Associated Complex Contacts:</p>
+        <p class="footer-subtext">General Phone: 042-35886000</p>
+        <p class="footer-subtext">Additional Contact: +92 311 1222288</p>
+        <p class="footer-subtext">General Email: care@salammedicalcomplex.com</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Salam Pharmacy. All rights reserved.</p>
+      <p class="footer-disclaimer">Medical Disclaimer: Content on this site is for informational purposes and does not substitute professional medical advice, diagnosis, or treatment.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">&uarr;</button>
+</body>
+</html>
